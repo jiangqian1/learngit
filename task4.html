@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>task4</title>
+</head>
+<style>
+	body {
+   		 background-color: #eff0f4;
+   		 margin-top:15px;
+   		}
+	.header{
+		height: 70px;
+		line-height: 70px;
+		background-color: #5fc0cd;
+		color: #fff;
+	}
+	#header1{
+		position: absolute;
+		left:20px;
+		ont-size: 1.3em;
+	}
+	#header2{
+		font-size: 1.6em;
+		font-weight: bold;
+		position: absolute;
+		left:47%;
+	}
+	#header3{
+		position: absolute;
+		right:20px;
+		font-size: 1.3em;
+	}
+	img{
+		width:20%;
+		/*height: 83px;*/
+		display: block;
+		float: left;
+	}
+	#main{
+		margin-top: 15px;
+		background-color: eff0f4;
+	}
+
+	input{  
+		height: 80px;
+		width:100%;
+		border: 0;
+		outline: none;
+		font-size: 1.5em;
+		margin-bottom: 10px;
+		text-indent: 150px;
+	}  
+	.phone{
+		background-image: url(login_02.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 0 center;
+	}
+	.password{
+		background-image: url(login_06.png);
+	}
+	.but{  
+		 width:100%;  
+		 height: 80px;  
+		 display: block;    
+		 outline: none;
+		 border:0;
+		 background-color: #5fc0cd;  
+		 color: #fff;  
+		 font-size: 2em;
+		 font-weight: bold;
+		 letter-spacing: 20px;
+		 line-height: normal;  
+		 margin: 0;  
+	  }
+  	.foot{
+		color: #5fc0cd;
+		font-size: 1em;
+		position: absolute;
+		right: 20px;
+	}
+</style>
+<body>
+	
+
+<div class= "header">
+	<span id="header1">注册</span>
+	<span id="header2">登录</span>
+	<span id="header3">关闭</span>
+</div>
+<div id = "main">
+	<form method=“post”>
+
+		<input type="text" name="phone number" placeholder="请输入手机号" required="required" class="phone"><br />
+
+              	<input type="password" name="pwd" placeholder="请输入密码" required="required" class="phone password">
+       
+             	<button type="submit" class="but" >登录</button>
+	</form>
+	
+</div>
+	<a href="#" class="foot">忘记密码?</a>
+</body>
+</html>
