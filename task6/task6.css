@@ -46,39 +46,87 @@ body{
 	
 	}
 .ico1{
-	width:2rem;
-	height:2.5rem;
+	width:1.8rem;
+	height:1.7rem;
 	position: absolute;
 	right:5%;
 	background-image: url(sprites.jpg);
     	background-repeat: no-repeat;
-    	background-position: 30% 4.2%;
+    	background-position: -0.75rem -0.46rem;
 	}
-.nav{
+.nav-boxstlye {
 	position: fixed;
-	top: 3.5rem;
+	top: 3.7rem;
 	left: 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	border-bottom: .0625rem solid #e1e5e7;
-	height: 3rem;
+	height: 2.7rem;
 	width: 100%;
-	padding: 0;
+	padding: .25rem 0 .25rem;
 	background: #fff;
-
-	}
-.dropdown{
-	float: left;
-	}
-.dropdown-toggle{
-	color:#999;
-	}
-.dropdown:hover ul {
-    display: block;
 }
+
+ul,
+ul a,
+li,
+li a {
+	list-style: none;
+	text-decoration: none;
+	color: #b0b0b0;
+	font-size: 0.8rem;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-boxstlye-son {
+	height: 1.7rem;
+	width: 33.4%;
+	border: none;
+	border-right: .0625rem solid #e1e5e7;
+	position: relative;
+	}
+
+.a-stlye {
+	display: block;
+	border: none;
+	line-height: 1.7rem;
+	text-align: center;
+}
+
+.a-bottom {
+    	display: none;
+}
+
+ul li a {
+	display: inline-block;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	text-align: center;
+	background-color: #fff;
+	width: 100%;
+	color: black;
+}
+
+.nav-boxstlye-son:hover ul {
+   	 display: block;
+}
+
 ul li a:hover {
-    background-color: #5fc0cd;
+    	background-color: #5fc0cd;
+}
+
+
+
+.triangle-top {
+	width: 0;
+	height: 0;
+	border-top: .3125rem solid #afbac0;
+	border-right: .3125rem solid transparent;
+	border-left: .3125rem solid transparent;
+	position: absolute;
+	right: .5rem;
+	top: 0.85rem;
 }
 .main{
 	margin-top: 2rem;
@@ -96,12 +144,12 @@ ul li a:hover {
 .date{
 	color: #999;
 	padding-left: 2.5rem;
-   	background: url(sprites.jpg) no-repeat -4% 21.5%;
+   	background: url(sprites.jpg) no-repeat -0.75rem -3.3rem;
 }
 .location{
 	color: #999;
 	padding-left: 2.5rem;
-   	background: url(sprites.jpg) no-repeat -4% 30.5%;
+   	background: url(sprites.jpg) no-repeat -0.75rem -5rem;
 }
 .time{
 	display: flex;
@@ -119,14 +167,14 @@ ul li a:hover {
 	width:8.5rem;
 	color:#e63b0e;
 	text-align: center;
-    	padding-right:3rem;
-    	background: url(sprites.jpg) no-repeat 235% 40.1%;
+    	padding-right:2rem;
+    	background: url(sprites.jpg) no-repeat  5rem -6.5rem;
     	white-space: nowrap;
 }
 .footer{
 	background-color: #f8fafb;
 	width: 100%; 
-	height: 6rem;
+	height: 3.5rem;
 	position: fixed;
 	border-top: .0625rem solid #d1d2ce;
  	bottom: 0;
@@ -135,28 +183,31 @@ ul li a:hover {
 	justify-content: space-around;
 }
 .footerbox{
-	height: 4rem;
+	height: 2rem;
 	width: 4.8rem; 
-	padding-top:3.5rem;
-	margin-top: 0.5rem;
+	padding-top:2.4rem;
+	margin-top: 0.1rem;
 	text-align: center;
 	font-size: .8rem;
 }
 .footer-text1 {
 	color: #5fc0cd;
-	background: url(sprites.jpg) 25% 55% no-repeat;
+	background: url(sprites.jpg) 0.5rem -7.55rem no-repeat;
   	
 }
 .button{
 	width: 63px;
 	height: 60px;
 	margin-top:2px ;
-	background: url(sprites.jpg) 25% 78% no-repeat;
+	background: url(sprites.jpg) -0.75rem -10.9rem no-repeat;
 	border-radius: 14px;
 	
 }
 .footer-text2{
 	color: #999;
-	background: url(sprites.jpg) 25% 99.5% no-repeat;
+	background: url(sprites.jpg) 0.45rem -14.3rem no-repeat;
   
+}
+.box{
+	height: 3rem;
 }
