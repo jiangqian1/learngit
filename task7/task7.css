@@ -87,6 +87,7 @@ i{
 	top:150px;
 	right:2px;
 }
+
 .circle{
 	display: inline-block;
 	width: 10px;
@@ -94,7 +95,9 @@ i{
 	background: #000;
 	border-radius: 50%;
 }
-.circle1{
+.circle:hover{
+	background-color: #69d1e9;
+}
+.blue{
 	background: #69d1e9;
-
 }

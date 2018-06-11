@@ -194,6 +194,10 @@ i{
  	display: block;
  	clear: both;
  }
+ .box{
+ 	width: 100%;
+ 	height:280px;
+ }
   .foot{
  	position: fixed;
  	bottom: 0;
