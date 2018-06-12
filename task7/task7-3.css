@@ -5,7 +5,7 @@ html,body,pre{
 	font-size: 16px;
 	overflow-x:hidden;
 }
-.head{
+header{
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -16,11 +16,11 @@ html,body,pre{
 	background-color: #74d4eb;
 	z-index: 1;
 }
-.main{
-	position: absolute;
-	top: 60px;
+main{
+	margin-top: 60px;
+	margin-bottom: 100px;
 	width: 100%;
-	height: 80%;
+	height: 100%;
 	background-color: #29bde0;
 }
 .box-home{
@@ -117,8 +117,8 @@ html,body,pre{
 	padding-bottom: 10px;
 	border-bottom: 1px solid #ddd;
 }
-.foot{
-	position: fixed;
+footer{
+	position:fixed;
 	bottom: 0;
 	width: 100%;
     	height: 70px;
