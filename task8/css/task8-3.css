@@ -1,0 +1,250 @@
+body{
+	font-size: 12px;
+	background-color: #fff;
+	font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
+	background-color: #fafafa;
+}
+*{
+	margin: 0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+}
+
+/**************头部***************/
+.it_navbar{
+	top:5px;
+	background-color: #29b078;
+	padding-right:25%;
+	height: 70px;
+	margin-bottom: 0;
+	border: none;
+}
+.it_navbar .navbar-header .navbar-toggle{
+	margin-right: -30%;
+	margin-top: 18px;
+}
+#it_header  #it-nav  li a{
+	color: #fff;
+	height: 60px;
+	line-height: 30px;
+}
+#it_header  #it-nav  .navbar-nav  li.active a,
+#it_header  #it-nav .navbar-nav  li a:hover{
+	background-color:transparent;
+	border-bottom:2px solid #fff;
+}
+#it_header  .navbar-header{
+	position: relative;
+	width: 100%;
+}
+#it_header  .navbar-header a{
+	position: absolute;
+	left:8%;
+}
+/**************头部***************/
+
+
+/*************主体部分***************/
+main{
+	margin:5px 0 100px 0;
+}
+.shouye{
+	margin-left: 8%;
+	margin-right: 8%;
+	font-size: 14px;
+	height:40px;
+	line-height: 40px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.shouye a{
+	color:#000;
+}
+.shouye span{
+	color:#29b078;
+}
+.select{
+	margin-left: 8%;
+	margin-right: 8%;
+	height:60px;
+	line-height: 40px;
+	color:#999;
+
+}
+.select ul li{
+	float: left;
+	margin-right:20px;
+}
+
+.select ul li a{
+	text-align: center;
+	display: inline-block;
+	width: 50px;
+	line-height: 20px;
+	color:#000;
+	text-decoration: none;
+}
+.select ul a:hover{
+	color:#fff;
+	background-color:  #29b078;
+}
+.direction{
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-bottom: 40px;
+	font-size: 15px;
+ 	height:40px;
+ 	line-height: 40px;
+	border-bottom: 1px solid #e5e5e5;
+}
+/************岗位推荐***************/
+.container{
+	width: 84%;
+}
+mian .row{
+	margin-top: 40px;
+}
+
+.post{
+	min-height: 1px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}	
+
+table{
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 8px #ccc;
+	font-size: 13px;
+}   
+table tbody tr,td{
+	padding: 8px;
+}
+.post .job{
+    	float: left;
+	margin-right: 10px;
+	width: 120px;
+	height: 120px;
+	background-image: url(../imgs/job.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.post .name{
+	display: table-cell;
+}
+ .post p{
+	line-height: 15px;
+}
+.post tr{
+	line-height: 40px;
+	word-spacing: 5px;
+} 
+.post .td{
+	vertical-align: middle;
+	padding: 10px 8px;
+	border-collapse: collapse;
+	
+}
+.td2{
+	width:10%;
+}
+.td3{
+   	 width: 50%;
+}
+
+th {
+   	 text-align: left;
+}
+.post .red{
+	color:#f01400;	
+}
+.post .right{
+	float: right;
+}
+.post .tr-study{
+	font-size: 15px;
+	font-weight: bold;
+}
+.word-box{
+	padding: 0;
+	line-height: 60px;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc
+}
+
+/*************主体部分***************/
+
+
+/*************底部***************/
+
+.foot-main {
+	overflow: hidden;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 20px;
+	background-color: #26a26f;
+
+}
+.foot-bottom {
+	width: 100%;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	background-color: #26a26f;
+	border-top: 1px solid #32c086;
+}
+.foot-main a{
+	color: #fff;
+	font-size: 14px;
+}
+.main-top {
+	display: inline-block;
+	margin-right: 30px;
+}
+.word-title {
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+}
+.word-link {
+	margin-top: 50px;
+	padding-right: 10px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	word-spacing: 5px;
+	color: #fff;
+	font-size: 13px;
+}
+.main-bottom {
+   	 display: inline-block;
+}
+.word-website {
+	margin-top: 15px;
+	margin-right: 20px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	font-size: 13px;
+}
+.code-box {
+	float: right;
+	height: 100px;
+	margin-top: 15px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.3rem;
+}
+.qr-code {
+	width: 80px;
+	height: 80px;
+	background-image: url(../imgs/wechat.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*************底部***************/

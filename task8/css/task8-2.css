@@ -1,0 +1,180 @@
+body{
+	font-size: 10px;
+	background-color: #fff;
+	font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
+	background-color: #fafafa;
+}
+*{
+	margin: 0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+}
+
+/**************头部***************/
+#it_header{
+
+}
+#it_header .top-bar{
+	color:#29b078;
+	height: 35px;
+	padding-top: 5px;
+	line-height: 35px;
+	position: relative;
+}
+#it_header .top-bar a{
+	margin-right: 10px;
+}
+#it_header .top-bar .top-bar-2{
+	text-align: right;
+}
+#it_header .top-bar .top-bar-1{
+	text-align: left;
+}
+.it_navbar{
+	top:5px;
+	background-color: #29b078;
+	padding-right:25%;
+	height: 70px;
+	margin-bottom: 0;
+	border: none;
+}
+.it_navbar .navbar-header .navbar-toggle{
+	margin-right: -30%;
+	margin-top: 18px;
+}
+#it_header  #it-nav  li a{
+	color: #fff;
+	height: 60px;
+	line-height: 30px;
+}
+#it_header  #it-nav  .navbar-nav  li.active a,
+#it_header  #it-nav .navbar-nav  li a:hover{
+	background-color:transparent;
+	border-bottom:2px solid #fff;
+}
+#it_header  .navbar-header{
+	position: relative;
+	width: 100%;
+}
+#it_header  .navbar-header a{
+	position: absolute;
+	left:9%;
+}
+/**************头部***************/
+
+/**************展示图***************/
+.show{
+	width: 100%;
+	height: 200px;
+	border-top: 1px solid #fff;
+	background:url(../imgs/show.jpg) no-repeat center center;
+	background-color: #000;
+	position: relative;
+}
+.show h2,h4,h1{
+	color:#fff;
+}
+.show h2{
+	position: absolute;
+	top:50px;
+	left:40%;
+}
+.show .h4-1{
+	position: absolute;
+	top:100px;
+	left:40%;
+}
+.show .h4-2{
+	position: absolute;
+	top:120px;
+	left:40%;
+}
+.show h1{
+	position: absolute;
+	top:80px;
+	left:52%;
+}
+
+
+/**************展示图***************/
+.top-nav{
+	margin:10px 0;
+}
+.label{
+	color:#29b078;
+}
+
+/*************主体部分***************/
+main{
+	margin-bottom: 100px;
+}
+.main-left{
+	height: 530px;
+	border: 1px solid #ededed;
+	background-color: #fff;
+	margin-right: 10px;
+
+}
+.main-left .corp{
+	text-align: center;
+	font-size: 14px;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ededed;
+}
+.main-left li{
+	margin:20px 0;
+}
+
+.main-left   li a{
+	color:#29b078;
+	font-size: 11px;
+}
+.main-right {
+	background-color: #fff;
+	height: 600px;
+	border: 1px solid #ededed;
+}
+
+.main-right .row{
+	border-bottom: 1px solid #ededed;
+
+}
+.main-right .tudou{
+	padding-top: 30px;
+	padding-left: 30px;
+
+}
+p {
+	padding:10px;
+	color:#999;
+}
+
+/*************主体部分***************/
+
+/*************底部***************/
+#it_footer{
+	width:100%;
+	height: 180px;
+	background-color: #29b078;
+}
+#it_footer .foot-left,.foot-middle,.foot-right{
+	padding-top:20px;
+}
+#it_footer .foot-left p{
+	padding-bottom:50px;
+}
+#it_footer .foot-middle p{
+	padding-bottom:10px;
+}
+#it_footer p{
+	color: #fff;
+	font-size: 14px;
+}
+#it_footer .bottom-p{
+	font-size: 12px;
+	color: #fff;
+	padding-top:20px;
+}
+/*************底部***************/
