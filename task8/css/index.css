@@ -12,15 +12,9 @@ body{
 }
 
 /**************头部***************/
-#it_header{
-
-}
 #it_header .top-bar{
 	color:#29b078;
-	height: 35px;
-	padding-top: 5px;
-	line-height: 35px;
-	position: relative;
+	height: 10px;
 }
 #it_header .top-bar a{
 	margin-right: 10px;
@@ -28,25 +22,20 @@ body{
 #it_header .top-bar .top-bar-2{
 	text-align: right;
 }
-.it_navbar{
-	top:5px;
+
+#bottom-nav{
+	margin-top: 10px;
 	background-color: #29b078;
-	padding-right:25%;
-	height: 70px;
-	margin-bottom: 0;
-	border: none;
+	margin-bottom:-1px;
 }
-.it_navbar .navbar-header .navbar-toggle{
-	margin-right: -30%;
-	margin-top: 18px;
-}
-#it_header  #it-nav  li a{
+#it-nav  li a{
 	color: #fff;
 	height: 60px;
 	line-height: 30px;
 }
-#it_header  #it-nav  .navbar-nav  li.active a,
-#it_header  #it-nav .navbar-nav  li a:hover{
+
+#it-nav  .navbar-nav  li.active a,
+#it-nav .navbar-nav  li a:hover{
 	background-color:transparent;
 	border-bottom:2px solid #fff;
 }
@@ -60,21 +49,25 @@ body{
 	display: inline-block;
 }
 #it_carousel .glyphicon{
-	font-size: 40px;
-}
+	font-size: 30px;
+}                                                                
 /**************轮播图***************/
 
 /*************优势***************/
+@media screen and (min-width: 768px) {
+	#it_advantage .last {
+		border-left:2px dotted #e0e0e0;
+	}
+}
 #it_advantage{
 	margin-top: 60px;
-
 } 
 
 #it_advantage .ad-row{
 	text-align: center;
 	padding-right: 50px;
 }
- .title{
+.title{
 	color: #000;
 	margin: 20px 0;
 }
@@ -83,10 +76,9 @@ body{
 	font-size: 18px;
 }
 #it_advantage .last{
+	text-align: center;
 	height: 200px;
-	border-left:2px dotted #e0e0e0;
-	padding:50px 0 0 30px;
-
+	padding-top:50px;
 }
 
 /*************优势***************/
@@ -96,28 +88,40 @@ body{
 	margin-top:60px;
 	text-align: center;
 }
-#it_how .step{
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
-	background-color: #fff;
-	border: 1px solid #e0e0e0;
-	font-size: 16px;
-	color: #29b078;
-	line-height: 40px;
+.col-flex {
+	margin-bottom: 40px;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 60px;
+}
+.circle {
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
 	text-align: center;
+	color: #29b078;
+	font-size: 13px;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 8px #ccc;
 }
-#it_how .row{
-	margin:50px 0;
+.word-grey {
+	margin-left: 10px;
+	display: block;
+	width: 60%;
+	font-size: 12px;
+	text-align: justify;
+	color: #999;
 }
-#it_how .row li{
-	float: left;
-	margin-right: 5px;
-}
-#it_how .row .step-con{
-	padding:10px;
-	width:15%;
-
+.icon-arrow {
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../imgs/tangle.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 /*************如何学习***************/
 
@@ -127,16 +131,17 @@ body{
 }
 #it_smart .smart{
 	margin: 30px 0;
+	padding: 10px 20px;
+	box-shadow: 0 0 10px #ccc;
 }
 #it_smart .dot{
 	display: inline-block;
 	width: 10px;
 	height: 10px;
-	background: #fff;
+	background: #ccc;
 	border-radius: 50%;
-	border: 1px solid #e0e0e0;
 }
-#it_smart .dot:hover,#it_smart .active{
+#it_smart .dot:hover{
 	background-color: #29b078;
 }
 
@@ -147,17 +152,29 @@ body{
 	margin-top: 60px;
 	text-align: center;
 }
-/*.clear::after{
-	content: "";
-	display: block;
-	clear:both;
-}*/
-#it_enterprise ul{
-	border: 1px solid #e0e0e0;
+@media screen and (min-width: 1024px){
+.clearfix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	}
 }
-#it_enterprise li{
-	float:left;
-	margin:50px 25px;
+@media screen and (min-width: 1024px) {
+.company-box{
+    	width: 19%;
+	}
+}
+.company-box {
+	float: left;	
+	margin-bottom: 50px;
+	width: 100%;
+	text-align: center;
+	line-height: 160px;
+	background: #fff;
+	box-shadow: 0 0 10px #ccc;
+}
+.company-box:hover {
+    	box-shadow: 0 0 10px;
 }
 
 /*************合作企业***************/
@@ -171,39 +188,104 @@ body{
 }
 #it_link ul{
 	display: flex;
-	justify-content:space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 0;
+	padding-left: 0;
+	width: 95%;
+	list-style: none;
+}
+#it_link ul li::before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	margin-top: 12px;
+	margin-left: -10px;
+	border-radius: 50%;
+	background: #999;
 }
 #it_link li{
-	list-style: disc;
+	margin-left: 1%;
+	margin-right: 1%;
+	height: 30px;
+	font-size: 1.4rem;
+	text-indent: 1.2rem;
+	line-height: 30px;
+	color: #a1a1a1;
 }
 #it_link li a{
-		color:#999;
+	color:#999;
 }
 
 /*************友情链接***************/
 
 /*************底部***************/
-#it_footer{
-	width:100%;
-	height: 180px;
-	background-color: #29b078;
+.foot-main {
+	overflow: hidden;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 20px;
+	background-color: #26a26f;
 }
-#it_footer .foot-left,.foot-middle,.foot-right{
-	padding-top:20px;
+.foot-bottom {
+	width: 100%;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	background-color: #26a26f;
+	border-top: 1px solid #32c086;
 }
-#it_footer .foot-left p{
-	padding-bottom:50px;
-}
-#it_footer .foot-middle p{
-	padding-bottom:10px;
-}
-#it_footer p{
+.foot-main a{
 	color: #fff;
 	font-size: 14px;
 }
-#it_footer .bottom-p{
-	font-size: 12px;
+.main-top {
+	display: inline-block;
+	margin-right: 30px;
+}
+.word-title {
+	margin-top: 20px;
+	display: inline-block;
 	color: #fff;
-	padding-top:20px;
+	font-size: 14px;
+}
+.word-link {
+	margin-top: 50px;
+	padding-right: 10px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	word-spacing: 5px;
+	color: #fff;
+	font-size: 13px;
+}
+.main-bottom {
+   	 display: inline-block;
+}
+.word-website {
+	margin-top: 15px;
+	margin-right: 20px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	font-size: 13px;
+}
+.code-box {
+	float: right;
+	height: 100px;
+	margin-top: 15px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.3rem;
+}
+.qr-code {
+	width: 80px;
+	height: 80px;
+	background-image: url(../imgs/wechat.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 /*************底部***************/

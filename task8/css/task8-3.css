@@ -12,35 +12,32 @@ body{
 }
 
 /**************头部***************/
-.it_navbar{
-	top:5px;
+#it_header .top-bar{
+	color:#29b078;
+	height: 10px;
+}
+#it_header .top-bar a{
+	margin-right: 10px;
+}
+#it_header .top-bar .top-bar-2{
+	text-align: right;
+}
+
+#bottom-nav{
+	margin-top: 10px;
 	background-color: #29b078;
-	padding-right:25%;
-	height: 70px;
-	margin-bottom: 0;
-	border: none;
+	margin-bottom:-1px;
 }
-.it_navbar .navbar-header .navbar-toggle{
-	margin-right: -30%;
-	margin-top: 18px;
-}
-#it_header  #it-nav  li a{
+#it-nav  li a{
 	color: #fff;
 	height: 60px;
 	line-height: 30px;
 }
-#it_header  #it-nav  .navbar-nav  li.active a,
-#it_header  #it-nav .navbar-nav  li a:hover{
+
+#it-nav  .navbar-nav  li.active a,
+#it-nav .navbar-nav  li a:hover{
 	background-color:transparent;
 	border-bottom:2px solid #fff;
-}
-#it_header  .navbar-header{
-	position: relative;
-	width: 100%;
-}
-#it_header  .navbar-header a{
-	position: absolute;
-	left:8%;
 }
 /**************头部***************/
 
@@ -122,20 +119,38 @@ table{
 table tbody tr,td{
 	padding: 8px;
 }
-.post .job{
-    	float: left;
-	margin-right: 10px;
-	width: 120px;
-	height: 120px;
-	background-image: url(../imgs/job.png);
-	background-repeat: no-repeat;
-	background-size: contain;
+@media screen and (max-width: 767px){
+	.post .job{
+		float: left;
+		margin-right: 10px;
+		width: 60px;
+		height: 60px;
+		background-image: url(../imgs/job.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+@media screen and (min-width: 768px){
+	.post .job{
+		float: left;
+		margin-right: 10px;
+		width: 90px;
+		height: 90px;
+		background-image: url(../imgs/job.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 }
 .post .name{
+	padding-top: 10px;
 	display: table-cell;
 }
+.post h5{
+	margin: 0;
+}
  .post p{
-	line-height: 15px;
+ 	font-size: 14px;
+	line-height: 14px;
 }
 .post tr{
 	line-height: 40px;
