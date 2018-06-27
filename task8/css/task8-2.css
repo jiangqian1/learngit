@@ -64,12 +64,17 @@ main{
 	margin-right: 10px;
 
 }
+.main-left ul{
+	padding-top: 20px;
+	padding-left:40%;
+	list-style: none;
+}
 .main-left .corp{
-	text-align: center;
 	font-size: 14px;
 	height: 60px;
 	line-height: 60px;
 	border-bottom: 1px solid #ededed;
+	padding-left:43%;
 }
 .main-left li{
 	margin:20px 0;
