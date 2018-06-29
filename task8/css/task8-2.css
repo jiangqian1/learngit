@@ -19,6 +19,9 @@ body{
 #it_header .top-bar a{
 	margin-right: 10px;
 }
+#it_header .top-bar .top-bar-1{
+	text-align: left;
+}
 #it_header .top-bar .top-bar-2{
 	text-align: right;
 }
